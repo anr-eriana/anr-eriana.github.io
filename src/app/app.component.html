@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top shadow-sm animated-navbar" id="mainNav">
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm animated-navbar" id="mainNav">
   <div class="container px-5">
       <a class="navbar-brand fw-bold d-flex align-items-center" href="#page-top">
           <span id="home">Home</span>
@@ -9,7 +9,7 @@
           <i class="bi bi-list"></i>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse restbar" id="navbarResponsive">
           <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
               <li class="nav-item"><a class="nav-link me-lg-3" href="#members">Members</a></li>
               <li class="nav-item"><a class="nav-link me-lg-3" href="#publications">Publications</a></li>
@@ -26,19 +26,22 @@
 </nav>
 
 <header id="masthead">
-  <div class="container px-5">
-      <div class="row gx-5 align-items-center">
-          <div class="col-lg-4">
-              <img id="logo" src="assets/img/logo.png" class="animate-logo">
-          </div>
-          <div class="col-lg-8">
-              <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                  <h1 class="animated-title"><span>E</span><span>R</span><span>I</span><span>A</span><span>N</span><span>A</span></h1>
-              </div>
-          </div>
+  <div class="container px-5" id="header-container">
+    <div class="d-inline-flex flex-wrap align-items-center justify-content-center w-100">
+      <!-- Logo -->
+      <div>
+        <img id="logo" src="assets/img/logo.png" class="animate-logo img-fluid">
       </div>
+      <!-- Texte -->
+      <div>
+        <h1 class="animated-title d-inline-flex">
+          <span>E</span><span>R</span><span>I</span><span>A</span><span>N</span><span>A</span>
+        </h1>
+      </div>
+    </div>
   </div>
 </header>
+
 
 
 
@@ -46,7 +49,7 @@
 <section id="content-section">
   <div class="container px-5">
       <div class="content-box">
-          <h2 class="content-title">Description</h2>
+          <h2 class="content-title">Description</h2><br/>
           <p>
             Donner un sens aux récits du quotidien est une tâche très difficile, qui nécessite une compréhension approfondie de la langue et une connaissance vaste du monde. Alors qu’un “lecteur humain” peut s’appuyer sur un raisonnement de haut niveau pour tirer des conclusions, les modèles actuels manquent largement de cette capacité. La majorité des approches existantes de la compréhension du langage, en particulier celles qui reposent sur des modèles neuronaux de bout en bout, se concentrent principalement sur l’exécution de formes de raisonnement de bas niveau (au niveau de la phrase) pour accomplir des tâches.
           </p><br/>
