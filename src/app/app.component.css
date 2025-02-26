@@ -1,4 +1,3 @@
-/* Global */
 html, body {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Navbar */
 #mainNav {
   position: sticky;
   top: 0;
@@ -29,19 +27,6 @@ html, body {
   }
 }
 
-/* Home Text */
-#home {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.restbar ul li a{
-  font-size: 25px;
-}
-.restbar ul li a:hover{
-  color: #dd089d;
-}
-
-/* Bouton EVENT */
 .btn-primary {
   background: #800080;
   border: none;
@@ -53,163 +38,4 @@ html, body {
 .btn-primary:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(221, 8, 157, 0.6);
-}
-
-/* Header */
-#masthead {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-
-
-
-/* Logo Animation */
-#logo {
-  padding: 15px;
-  width: 350px;
-  min-width: 250px;
-  height: auto;
-  opacity: 0;
-  transform: scale(0.8);
-  animation: fadeInLogo 1s ease-out forwards;
-}
-
-
-@keyframes fadeInLogo {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-/* Titre ERIANA */
-h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 10vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 20px;
-}
-
-.animated-title span {
-  display: inline-block;
-  background: linear-gradient(90deg, #800080, #dd089d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideInLetters 1.2s ease-out forwards;
-}
-
-.animated-title span:nth-child(1) { animation-delay: 0.2s; }
-.animated-title span:nth-child(2) { animation-delay: 0.4s; }
-.animated-title span:nth-child(3) { animation-delay: 0.6s; }
-.animated-title span:nth-child(4) { animation-delay: 0.8s; }
-.animated-title span:nth-child(5) { animation-delay: 1s; }
-.animated-title span:nth-child(6) { animation-delay: 1.2s; }
-
-@keyframes slideInLetters {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
-
-
-/* Flèche de scroll */
-.scroll-arrow {
-  position: absolute;
-  bottom: 30px; /* Positionnée en bas du header */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 40px;
-  color: white;
-  opacity: 0.8;
-  animation: bounce 1.5s infinite;
-  cursor: pointer;
-  z-index: 10;
-  color: black;
-}
-
-/* Animation de rebond */
-@keyframes bounce {
-  0%, 100% {
-    transform: translateX(-50%) translateY(0);
-  }
-  50% {
-    transform: translateX(-50%) translateY(-10px);
-  }
-}
-
-/* Effet au survol */
-.scroll-arrow:hover {
-  opacity: 1;
-}
-
-
-
-/* Section de texte */
-#content-section {
-  padding: 80px 0;
-  text-align: left;
-}
-
-.content-box {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.content-title {
-  font-size: 5vw;
-  font-weight: bold;
-  color: #6a0572;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.content-box p {
-  font-size: 20px;
-  line-height: 1.8;
-  color: #444;
-  margin-bottom: 20px;
-  text-align: justify;
-}
-
-
-
-
-
-
-
-
-
-/* Section Partenaires */
-#partners-section {
-  padding: 20px 0;
-  background: linear-gradient(135deg, #6a0572, #a8339b); 
-  text-align: center;
-}
-
-
-/* Grille des logos */
-.partners-logos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.partners-logos img {
-  width: 130px;
-  height: auto;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.partners-logos img:hover {
-  transform: scale(1.1);
-  opacity: 0.9;
 }

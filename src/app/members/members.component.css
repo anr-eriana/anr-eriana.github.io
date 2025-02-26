@@ -1,0 +1,42 @@
+/* Conteneur général */
+h2{
+    color: #800080;
+
+}
+.members-container {
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  /* Cartes des membres */
+  .member-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Photos des membres */
+  .member-photo {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  /* Infos des membres */
+  .member-info {
+    padding: 15px;
+    background: #800080; /* Fond assorti au design */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0 0 15px 15px;
+  }
+  
