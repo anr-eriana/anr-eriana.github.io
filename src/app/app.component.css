@@ -1,96 +1,171 @@
-/* Supprime les marges et paddings par défaut du navigateur */
+/* Global */
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Styles globaux */
-  * {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /* Fond en dégradé qui prend tout l'écran */
-  body {
-    background: linear-gradient(135deg, #1e1e2f, #2a2a3d);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Barre de navigation */
-  nav {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #ff4081;
-  }
-  
-  /* Conteneur principal */
-  .container {
-    
-    min-height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
 
+/* Navbar */
+#mainNav {
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.animated-navbar {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInNavbar 0.8s ease-out forwards;
+}
+
+@keyframes fadeInNavbar {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Titre principal */
-  h1 {
-    font-size: 80px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #ff4081, #ff9800);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+}
+
+/* Home Text */
+#home {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Bouton EVENT */
+.btn-primary {
+  background: linear-gradient(135deg, #800080, #dd089d);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(221, 8, 157, 0.6);
+}
+
+/* Header */
+#masthead {
+  padding: 30vh;
+  height: 100vh;
+}
+
+/* Logo Animation */
+#logo {
+  width: 250px;
+  height: auto;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInLogo 1s ease-out forwards;
+}
+
+@keyframes fadeInLogo {
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  /* Paragraphe */
-  p {
-    font-size: 20px;
-    max-width: 600px;
-    margin-top: 10px;
-    opacity: 0.8;
-    color: black;
+}
+
+/* Titre ERIANA */
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
+
+.animated-title span {
+  display: inline-block;
+  background: linear-gradient(90deg, #800080, #dd089d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInLetters 1.2s ease-out forwards;
+}
+
+.animated-title span:nth-child(1) { animation-delay: 0.2s; }
+.animated-title span:nth-child(2) { animation-delay: 0.4s; }
+.animated-title span:nth-child(3) { animation-delay: 0.6s; }
+.animated-title span:nth-child(4) { animation-delay: 0.8s; }
+.animated-title span:nth-child(5) { animation-delay: 1s; }
+.animated-title span:nth-child(6) { animation-delay: 1.2s; }
+
+@keyframes slideInLetters {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
+
+
+
+
+
+
+
+
+/* Section de texte */
+#content-section {
+  padding: 80px 0;
+  text-align: left;
+}
+
+.content-box {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #6a0572;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content-box p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+/* Section Partenaires */
+#partners-section {
+  padding: 20px 0;
+  background: linear-gradient(135deg, #6a0572, #a8339b); 
+  text-align: center;
+}
+
+
+/* Grille des logos */
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.partners-logos img {
+  width: 130px;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
