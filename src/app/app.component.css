@@ -1,0 +1,96 @@
+/* Supprime les marges et paddings par défaut du navigateur */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Styles globaux */
+  * {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Fond en dégradé qui prend tout l'écran */
+  body {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a3d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Barre de navigation */
+  nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ff4081;
+  }
+  
+  /* Conteneur principal */
+  .container {
+    
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+  }
+  
+  /* Titre principal */
+  h1 {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff4081, #ff9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Paragraphe */
+  p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-top: 10px;
+    opacity: 0.8;
+    color: black;
+  }
+  
