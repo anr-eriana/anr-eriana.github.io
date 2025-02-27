@@ -75,37 +75,6 @@
   
   
   
-  /* Flèche de scroll */
-  .scroll-arrow {
-    position: absolute;
-    bottom: 30px; /* Positionnée en bas du header */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 40px;
-    color: white;
-    opacity: 0.8;
-    animation: bounce 1.5s infinite;
-    cursor: pointer;
-    z-index: 10;
-    color: black;
-  }
-  
-  /* Animation de rebond */
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateX(-50%) translateY(0);
-    }
-    50% {
-      transform: translateX(-50%) translateY(-10px);
-    }
-  }
-  
-  /* Effet au survol */
-  .scroll-arrow:hover {
-    opacity: 1;
-  }
-  
-  
   
   /* Section de texte */
   #content-section {
@@ -159,8 +128,8 @@
   }
   
   .partners-logos img {
-    width: 130px;
-    height: auto;
+    height: 100px;
+    background-color: white;
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
   

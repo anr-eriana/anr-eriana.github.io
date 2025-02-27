@@ -1,41 +1,50 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  overflow-x: hidden;
-}
-
+/* Navbar */
 #mainNav {
-  position: sticky;
-  top: 0;
-  z-index: 1020; /* S'assurer qu'elle passe au-dessus des autres éléments */
-  background: rgba(255, 255, 255, 0.9); /* Ajouter un fond pour éviter qu'elle devienne transparente */
-  backdrop-filter: blur(10px); /* Effet flou pour plus de modernité */
+  background: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+  backdrop-filter: blur(10px); /* Effet de flou */
   transition: all 0.3s ease-in-out;
+  padding: 15px 0;
 }
 
-.animated-navbar {
-  opacity: 0;
-  transform: translateY(-20px);
-  animation: fadeInNavbar 0.8s ease-out forwards;
+/* Effet au scroll */
+#mainNav.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
 }
 
-@keyframes fadeInNavbar {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Icône du logo */
+.navbar-brand i {
+  color: #6a0572;
+  transition: color 0.3s ease;
 }
 
-.btn-primary {
-  background: #800080;
-  border: none;
+.navbar-brand:hover i {
+  color: #a8339b;
+}
+
+/* Liens du menu */
+.navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6a0572;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #a8339b;
+  transform: translateY(-2px);
+}
+
+/* Bouton Event */
+.btn-event {
+  background: linear-gradient(135deg, #800080, #dd089d);
+  color: white;
+  font-weight: bold;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-size: 25px;
-
 }
 
-.btn-primary:hover {
+.btn-event:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(221, 8, 157, 0.6);
 }

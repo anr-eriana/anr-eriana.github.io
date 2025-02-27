@@ -1,29 +1,31 @@
 <nav class="navbar navbar-expand-lg sticky-top shadow-sm animated-navbar" id="mainNav">
-  <div class="container px-5">
-      <a class="navbar-brand fw-bold d-flex align-items-center" routerLink="/">
-          <span id="home">Home</span>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
-              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="bi bi-list"></i>
-      </button>
-
-      <div class="collapse navbar-collapse restbar" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-              <li class="nav-item"><a class="nav-link me-lg-3" routerLink="members">Members</a></li>
-              <li class="nav-item"><a class="nav-link me-lg-3" routerLink="publications">Publications</a></li>
-              <li class="nav-item"><a class="nav-link me-lg-3" routerLink="software">Software</a></li>
-          </ul>
-
-          <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0 btn-event">
-              <span class="d-flex align-items-center">
-                  <span class="small">EVENT</span>
-              </span>
-          </button>
-      </div>
-  </div>
-</nav>
-
+    <div class="container px-5">
+        <!-- Logo / Home Icon -->
+        <a class="navbar-brand fw-bold d-flex align-items-center" routerLink="/">
+            <i class="bi bi-house-door-fill fs-3 me-2"></i> <!-- Icône maison -->
+        </a>
+  
+        <!-- Bouton Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+  
+        <!-- Menu -->
+        <div class="collapse navbar-collapse restbar" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                <li class="nav-item"><a class="nav-link" routerLink="members">Members</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="publications">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="software">Software</a></li>
+            </ul>
+  
+            <!-- Bouton Event -->
+            <a class="btn btn-primary rounded-pill px-4 py-2 btn-event d-flex align-items-center" href="#">
+                <i class="bi bi-calendar-event me-2"></i> <span>Event</span>
+            </a>
+        </div>
+    </div>
+  </nav>
+  
 <router-outlet></router-outlet>
 
