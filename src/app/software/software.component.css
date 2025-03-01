@@ -3,6 +3,9 @@ h2{
     color: #6a0572;
 }
 
+#soft-container{
+  height: 100vh;
+}
 .software-container {
     color: white;
     text-align: center;

@@ -48,3 +48,38 @@
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(221, 8, 157, 0.6);
 }
+
+
+
+
+
+/* Conteneur principal */
+.sponsors-container {
+  background: linear-gradient(135deg, #6a0572, #a8339b);
+  display: flex;
+  justify-content: center;
+}
+
+/* Grille des sponsors */
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 150px;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+}
+
+/* Logos */
+.sponsor-item {
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  padding: 20px;
+}
+
+/* Effet au survol */
+.sponsor-item:hover {
+  transform: scale(1.1);
+}
