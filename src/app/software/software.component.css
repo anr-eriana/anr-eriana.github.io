@@ -4,7 +4,7 @@ h2{
 }
 
 #soft-container{
-  height: 100vh;
+  min-height: 100vh;
 }
 .software-container {
     color: white;
